@@ -4,26 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Tic-Tac-Toe</h1>
-    <h4 class="turnStat">Start Game</h4>
-    <div class="container">
-        <div id="gameBox">
-            <button class="selectionBox">✖</button>
-            <button class="selectionBox">〇</button>
-            <button class="selectionBox">✖</button>
-            <button class="selectionBox">〇</button>
-            <button class="selectionBox">✖</button>
-            <button class="selectionBox">〇</button>
-            <button class="selectionBox">✖</button>
-            <button class="selectionBox">〇</button>
-            <button class="selectionBox">✖</button>
+    <div class="splashScreen" id="">
+      <h1>Tic-Tac-Toe</h1>
+      <h3>‎</h3><!--Invisible Chracter -->
+      <div class="splashContainer">
+        <div class="splashGameBox">
+          <button class="splashSelectionBox">✖</button>
+          <button class="splashSelectionBox">〇</button>
+          <button class="splashSelectionBox">✖</button>
+          <button class="splashSelectionBox">〇</button>
+          <button class="splashSelectionBox">✖</button>
+          <button class="splashSelectionBox">〇</button>
+          <button class="splashSelectionBox">✖</button>
+          <button class="splashSelectionBox">〇</button>
+          <button class="splashSelectionBox">✖</button>
+          <div id="version">
+          <p>✖ 〇 Game Version : 2.0 || Created by: Chamak ;)  〇 ✖
+          </p>
         </div>
+      </div>
     </div>
-    <div class="rst"></div>
-    </body>
+    </div>
+    <div class="mainMenu" id="hide">
+      <h1>Tic-Tac-Toe</h1>
+      <h4 >Main Menu</h4>
+      <div id="menuBtnHolder"> 
+        <button class="menuButton"  id="sP">Single Player</button>
+        <button class="menuButton"  id="mP">Multi Player</button>
+        <button class="menuButton"  id="st">Settings</button>
+      </div>
+    </div>
+    <div class="gameBoard" id="hide">
+      <h1>Tic-Tac-Toe</h1>
+      <h4 class="turnStat">Start Game</h4>
+      <div class="container">
+        <div class="gameBox">
+          <button class="selectionBox">✖</button>
+          <button class="selectionBox">〇</button>
+          <button class="selectionBox">✖</button>
+          <button class="selectionBox">〇</button>
+          <button class="selectionBox">✖</button>
+          <button class="selectionBox">〇</button>
+          <button class="selectionBox">✖</button>
+          <button class="selectionBox">〇</button>
+          <button class="selectionBox">✖</button>
+        </div>
+      </div>
+    </div>
+    <div class="settingsPage" id="hide">
+    <h1>Select Difficulty</h1>
+    <div id="selectorBox">
+      <select name="Difficulty" id="selector">
+      <option value="0">Low</option>
+      <option value="1">Medium</option>
+      <option value="2" selected>Hard</option>
+      </select>
+    </div>
+    <button id="mnubtn">Main Menu</button>
+    </div>
+    <div class="resultScreen" id="hide">
+    <div class="resultDisplay">
+    <h1 class="resultStat turnStat" >  </h1>
+    </div>
+    <img class="resultImage" src="">
+    <div class="rstOption">
+      <button class="rstbtn" id="rstBtn">Play Again</button>
+      <button class="rstbtn" id="mainMenuBtn">Main Menu</button>
+    </div>
+    </div>
+    </div>
+  </body>
   <script src="app.js"></script>
 </html>
